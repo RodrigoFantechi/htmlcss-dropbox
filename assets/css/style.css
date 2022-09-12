@@ -6,6 +6,7 @@
     --clr-black: #000000;
     --clr-btn-nav: #0061FF;
     --clr-banner: #B4D0E7;
+    --clr-border-grid: #EDEDEE
 }
 
 * {
@@ -14,15 +15,15 @@
     box-sizing: border-box;
 }
 
-/* .container {
-    width: 80%;
-    max-width: 1200px;
+.container {
+    width: 55%;
     margin: 0 auto;
-} */
+}
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
 }
 
 img {
@@ -31,6 +32,7 @@ img {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
 }
 
 
@@ -59,7 +61,7 @@ a {
 
 /* #region Header-Navbar */
 
-header{
+header {
     width: 100%;
     position: fixed;
 }
@@ -81,43 +83,47 @@ nav {
 }
 
 .links li,
-header img{
+header img {
     vertical-align: middle;
     padding: 0.6rem;
 }
 
 .links a {
     color: var(--clr-black);
-    font-size: 9px;
+
     vertical-align: middle;
 
 }
 
-.links li{
+.links li {
     border: 2px solid transparent;
-  }
+}
 
 .links .border_botton_marked:hover {
     border-bottom: 2px solid black;
-    
+
 }
 
 
-nav .btn{
+nav .btn {
     margin-right: 0.6rem;
 }
-header img{
+
+header img {
     width: 75px;
 }
 
 /* #endregion Header-Navbar */
 
 /* #region Main */
+
+
+/* BANNER */
 .banner {
     background-color: var(--clr-banner);
     padding-top: 7.25rem;
     padding-bottom: 0.75rem;
-    font-size: 9px;
+
 }
 
 .container_banner {
@@ -134,15 +140,94 @@ header img{
     font-size: 44px;
     padding-bottom: 2.5rem;
 }
-.text .btn{
+
+.text .btn {
     margin: 1.2rem 0;
-    font-size: 9px;
 }
-.text i{
+
+.text i {
     font-size: 1.75rem;
     margin-top: 2.75rem;
-    
 }
+
+/* GRID */
+.grid {
+    padding-top: 5.5rem;
+    background-color: var(--clr-white);
+}
+
+.grid form {
+    margin-top: 2.5rem;
+    margin-bottom: 1.75rem;
+}
+
+form * {
+    vertical-align: middle;
+}
+
+form label {
+    margin-right: 1.6rem;
+}
+
+.grid .row {
+    justify-content: space-between;
+}
+
+.grid .col-4,
+.users {
+    border: 1px solid var(--clr-border-grid);
+}
+
+.users {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.contenuto_colonna {
+    padding: 0.9rem;
+}
+
+.grid h2 {
+    font-size: 1.5rem;
+}
+.list, .punti_salienti{
+    margin-top: 1.5rem;
+}
+
+.type *, .punti_salienti *,
+.list *, .punti_salienti * {
+    margin: 0.3rem 0;
+}
+.grid ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -0.5em;
+}
+.grid .button_align{
+text-align: center;
+margin-top: 1.5rem;
+margin-bottom: 1rem;
+}
+.grid .btn{
+    width: 100%;
+}
+.punti_salienti i{
+    color: var(--clr-btn-nav);
+}
+.gray_line{
+    width: 1.7rem;
+    border: 0.5px solid var(--clr-border-grid);
+    margin-top: 1.5rem;
+}
+.grid a{
+    text-decoration: underline;
+    color: var(--clr-btn-nav);
+}
+.grid h3{
+    font-size: 1rem;
+}
+
 
 
 /* #endregion Main */
