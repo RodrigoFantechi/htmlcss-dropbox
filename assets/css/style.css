@@ -6,7 +6,9 @@
     --clr-black: #000000;
     --clr-primary: #0061FF;
     --clr-banner: #B4D0E7;
-    --clr-border-grid: #EDEDEE
+    --clr-border-grid: #EDEDEE;
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -64,6 +66,7 @@ a {
 header {
     width: 100%;
     position: fixed;
+    box-shadow: var(--light-shadow);
 }
 
 nav {
@@ -189,7 +192,7 @@ form label {
     justify-content: space-between;
 }
 
-.grid .col-4 {
+ .col-4 {
     border: 1px solid var(--clr-border-grid);
 }
 
@@ -243,6 +246,20 @@ margin-bottom: 1rem;
 .grid h3{
     font-size: 1rem;
 }
+.total_borded{
+    border: 1px solid var(--clr-border-grid);
+}
+.users.total_borded{
+    margin-top: 2.5rem;
+    border-bottom: none;
+}
+.borderless{
+    border: none;
+}
+.col-8 p{
+    margin-top:2.5rem;
+}
+
 
 
 
