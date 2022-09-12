@@ -4,7 +4,7 @@
 :root {
     --clr-white: #FFFFFF;
     --clr-black: #000000;
-    --clr-btn-nav: #0061FF;
+    --clr-primary: #0061FF;
     --clr-banner: #B4D0E7;
     --clr-border-grid: #EDEDEE
 }
@@ -15,12 +15,12 @@
     box-sizing: border-box;
 }
 
-.container {
+.main_container {
     width: 55%;
     margin: 0 auto;
 }
 
-.row {
+.main_row {
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5rem;
@@ -50,7 +50,7 @@ a {
 
 .btn {
     color: var(--clr-white);
-    background-color: var(--clr-btn-nav);
+    background-color: var(--clr-primary);
     padding: 0.3rem 0.75rem;
     border: none;
     font-family: 'Open Sans', sans-serif;
@@ -90,9 +90,7 @@ header img {
 
 .links a {
     color: var(--clr-black);
-
     vertical-align: middle;
-
 }
 
 .links li {
@@ -101,7 +99,6 @@ header img {
 
 .links .border_botton_marked:hover {
     border-bottom: 2px solid black;
-
 }
 
 
@@ -118,12 +115,16 @@ header img {
 /* #region Main */
 
 
-/* BANNER */
+/*
+=============== 
+BANNER
+===============
+*/
+
 .banner {
     background-color: var(--clr-banner);
     padding-top: 7.25rem;
     padding-bottom: 0.75rem;
-
 }
 
 .container_banner {
@@ -132,7 +133,8 @@ header img {
 }
 
 .banner img {
-    float: right;
+    position: absolute;
+    left: 30%;
     width: 70%;
 }
 
@@ -149,8 +151,22 @@ header img {
     font-size: 1.75rem;
     margin-top: 2.75rem;
 }
+article{
+    position: relative;
 
-/* GRID */
+}
+.banner .text{
+    width: 30%;
+}
+
+
+
+/*
+=============== 
+GRID
+===============
+*/
+
 .grid {
     padding-top: 5.5rem;
     background-color: var(--clr-white);
@@ -173,14 +189,14 @@ form label {
     justify-content: space-between;
 }
 
-.grid .col-4,
-.users {
+.grid .col-4 {
     border: 1px solid var(--clr-border-grid);
 }
 
 .users {
     text-align: center;
     padding: 0.5rem;
+    border-bottom: 1px solid var(--clr-border-grid);
 }
 
 .contenuto_colonna {
@@ -213,7 +229,7 @@ margin-bottom: 1rem;
     width: 100%;
 }
 .punti_salienti i{
-    color: var(--clr-btn-nav);
+    color: var(--clr-primary);
 }
 .gray_line{
     width: 1.7rem;
@@ -222,7 +238,7 @@ margin-bottom: 1rem;
 }
 .grid a{
     text-decoration: underline;
-    color: var(--clr-btn-nav);
+    color: var(--clr-primary);
 }
 .grid h3{
     font-size: 1rem;
