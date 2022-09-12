@@ -6,8 +6,6 @@
     --clr-black: #000000;
     --clr-btn-nav: #0061FF;
     --clr-banner: #B4D0E7;
-    
-
 }
 
 * {
@@ -36,64 +34,115 @@ body {
 }
 
 
+
 /* #endregion Common Rules */
 
 /* #region Utilities */
 ul {
     list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-  }
+}
 
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: var(--clr-white);
+    background-color: var(--clr-btn-nav);
+    padding: 0.3rem 0.75rem;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+}
 
 /* #endregion Utilities */
 
 /* #region Header-Navbar */
 
-nav{
-display: fixed;
-background: var(--clr-white);
-
+header{
+    width: 100%;
+    position: fixed;
 }
-.nav_header{
+
+nav {
+    background: var(--clr-white);
+    text-align: center;
+}
+
+.nav_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.links, .links li{
+
+.links,
+.links li {
     display: inline-block;
 }
 
-.links li, header img{
+.links li,
+header img{
     vertical-align: middle;
-    padding: 1rem; 
+    padding: 0.6rem;
 }
+
 .links a {
     color: var(--clr-black);
-    font-size: 0.95rem;
+    font-size: 9px;
+    vertical-align: middle;
 
-  }
-  .links li{
+}
+
+.links li{
     border: 2px solid transparent;
   }
 
-  .links li:hover {
+.links .border_botton_marked:hover {
     border-bottom: 2px solid black;
-  }
-  .btn{
-    color: var(--clr-white);
-    background-color: var(--clr-btn-nav);
-    padding: 0.4rem 0.75rem;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.95rem;
-  }
+    
+}
+
+
+nav .btn{
+    margin-right: 0.6rem;
+}
+header img{
+    width: 75px;
+}
 
 /* #endregion Header-Navbar */
 
 /* #region Main */
+.banner {
+    background-color: var(--clr-banner);
+    padding-top: 7.25rem;
+    padding-bottom: 0.75rem;
+    font-size: 9px;
+}
 
+.container_banner {
+    width: 65%;
+    margin: auto;
+}
+
+.banner img {
+    float: right;
+    width: 70%;
+}
+
+.banner h1 {
+    font-size: 44px;
+    padding-bottom: 2.5rem;
+}
+.text .btn{
+    margin: 1.2rem 0;
+    font-size: 9px;
+}
+.text i{
+    font-size: 1.75rem;
+    margin-top: 2.75rem;
+    
+}
 
 
 /* #endregion Main */
