@@ -67,9 +67,6 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 9px;
 }
-.btn:hover{
-    
-}
 
 .total_borded {
     border: 1px solid var(--clr-border-grid);
@@ -197,9 +194,6 @@ article {
 .text i {
     font-size: 1.75rem;
     margin-top: 2.75rem;
-}
-.banner a{
-    color: var(--clr-black);
 }
 
 /*
@@ -454,31 +448,32 @@ COMMON QUESTIONS
 }
 .question{
     border-top: 1px solid var(--clr-black);
+
     padding: 1.5rem 0;
+    
     vertical-align: middle;
 }
-.question_title{
+ .question{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+ }
+ .common_questions p{
+    display: none;
+ }
  .common_questions span{
     margin-right: 1.5rem;
-    animation: 0.3s;
-    
  }
- .question:hover .question_text{
+ .question_text:hover p{
     display: block;
     margin-top: 1rem;
  }
- .question:hover span{
-    rotate: 180deg;
+ .question_text:hover span{
+    display: none;
  }
-
  .question_text{
  padding: 0.2rem;
- display: none;
 }
 /* #endregion Main */
 
