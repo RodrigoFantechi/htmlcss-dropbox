@@ -472,8 +472,9 @@ COMMON QUESTIONS
  .question_text:hover span{
     display: none;
  }
- 
-
+ .question_text{
+ padding: 0.2rem;
+}
 /* #endregion Main */
 
 /* #region Footer */
