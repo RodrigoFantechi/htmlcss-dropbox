@@ -424,7 +424,49 @@ DROPBOX_FREE_TRIAL
 .dropbox_free_trial .col-4{
 padding: 0.5rem;
 }
+/*
+=============== 
+DROPBOX_FREE_TRIAL
+===============
+*/
+.common_questions h2{
+    margin-bottom: 2rem;
+}
+.common_questions {
+    padding-top: 5.5rem;
+    margin-bottom: 2rem;
+}
+.common_questions .main_container{
+    border-bottom: 1px solid var(--clr-black);
+    
+}
+.question{
+    border-top: 1px solid var(--clr-black);
 
+    padding: 1.5rem 0;
+    
+    vertical-align: middle;
+}
+ .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .common_questions p{
+    display: none;
+ }
+ .common_questions span{
+    margin-right: 1.5rem;
+ }
+ .question_text:hover p{
+    display: block;
+    margin-top: 1rem;
+ }
+ .question_text:hover span{
+    display: none;
+ }
+ 
 
 /* #endregion Main */
 
