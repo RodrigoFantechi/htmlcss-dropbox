@@ -1,6 +1,5 @@
 /* #region Common Rules */
 
-
 :root {
     --clr-white: #FFFFFF;
     --clr-black: #000000;
@@ -25,7 +24,7 @@
 .main_row {
     display: flex;
     flex-wrap: nowrap;
-    gap: 1.5rem;
+    gap: 1.5rem; 
 }
 
 img {
@@ -36,7 +35,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 9px;
 }
-
 
 
 /* #endregion Common Rules */
@@ -58,6 +56,23 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 9px;
 }
+.total_borded{
+    border: 1px solid var(--clr-border-grid);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.underlined{
+    text-decoration: underline;
+    color: var(--clr-primary);
+}
+
+
 
 /* #endregion Utilities */
 
@@ -67,6 +82,7 @@ header {
     width: 100%;
     position: fixed;
     box-shadow: var(--light-shadow);
+    z-index: 100;
 }
 
 nav {
@@ -130,19 +146,26 @@ BANNER
     padding-bottom: 0.75rem;
 }
 
-.container_banner {
+.container_banner, .container_footer {
     width: 65%;
     margin: auto;
 }
+article{
+    position: relative;
 
+}
 .banner img {
     position: absolute;
     left: 30%;
     width: 70%;
 }
+.banner .text{
+    width: 30%;
+}
+
 
 .banner h1 {
-    font-size: 44px;
+    font-size: 45px;
     padding-bottom: 2.5rem;
 }
 
@@ -154,15 +177,6 @@ BANNER
     font-size: 1.75rem;
     margin-top: 2.75rem;
 }
-article{
-    position: relative;
-
-}
-.banner .text{
-    width: 30%;
-}
-
-
 
 /*
 =============== 
@@ -188,11 +202,7 @@ form label {
     margin-right: 1.6rem;
 }
 
-.grid .row {
-    justify-content: space-between;
-}
-
- .col-4 {
+ .grid .col-4 {
     border: 1px solid var(--clr-border-grid);
 }
 
@@ -206,9 +216,7 @@ form label {
     padding: 0.9rem;
 }
 
-.grid h2 {
-    font-size: 1.5rem;
-}
+
 .list, .punti_salienti{
     margin-top: 1.5rem;
 }
@@ -239,27 +247,70 @@ margin-bottom: 1rem;
     border: 0.5px solid var(--clr-border-grid);
     margin-top: 1.5rem;
 }
-.grid a{
-    text-decoration: underline;
-    color: var(--clr-primary);
+
+
+.grid .borderless{
+    border: none;
 }
-.grid h3{
-    font-size: 1rem;
-}
-.total_borded{
-    border: 1px solid var(--clr-border-grid);
-}
+
 .users.total_borded{
     margin-top: 2.5rem;
     border-bottom: none;
 }
-.borderless{
-    border: none;
-}
+
 .col-8 p{
     margin-top:2.5rem;
 }
 
+/*
+=============== 
+MEET
+===============
+*/
+.meet{
+    padding-top: 5.5rem;
+}
+.btn_meet{
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border-top: 1px solid var(--clr-border-grid);
+    border-right: 1px solid var(--clr-border-grid);
+    border-bottom: 1px solid var(--clr-black);
+    border-left: 1px solid var(--clr-black);
+    margin: 1.2rem 0;
+}
+/*
+=============== 
+OPERATION_DROPBOX_BUSINESS
+===============
+*/
+.operation_dropbox_business{
+    padding-top: 5.5rem;
+}
+
+.operation_dropbox_business .main_row{
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 2rem;
+}
+.operation_dropbox_business .col-4{
+    padding: 0.6rem;
+}
+/*
+=============== 
+DROPBOX_COLABORATION
+===============
+*/
+.dropbox_colaboration{
+    padding-top: 5.5rem;
+}
+.dropbox_colaboration a{
+    display: block;
+    margin: 2.5rem 0;
+}
+.dropbox_colaboration img{
+    width: 20px;
+}
 
 
 
