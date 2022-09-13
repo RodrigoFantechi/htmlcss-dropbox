@@ -161,7 +161,7 @@ BANNER
 
 .banner {
     background-color: var(--clr-banner);
-    padding-top: 7.25rem;
+    padding-top: 6rem;
     padding-bottom: 0.75rem;
 }
 
