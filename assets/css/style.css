@@ -306,11 +306,38 @@ DROPBOX_COLABORATION
 }
 .dropbox_colaboration a{
     display: block;
-    margin: 2.5rem 0;
+    margin-top: 2.5rem;
 }
-.dropbox_colaboration img{
-    width: 20px;
+
+
+.container_flex{
+    display: flex;
+    margin-top: 3.5rem;
 }
+
+.wrap{ 
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+.wrap > div{
+  width: 45%;
+  height: 170px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+.wrap img{
+    width: 40%;
+
+}
+.grow img{
+    width: 30%;
+}
+.grow{
+    flex-grow: 1;
+}
+
 
 
 
