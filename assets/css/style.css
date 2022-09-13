@@ -16,6 +16,8 @@
     --clr-giallo: #FFD830;
     --clr-lighter_gray: #F5F5F5;
     --clr-color-title-trial: #61082B;
+    --clr-border-green: #D1E9CD;
+
 
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -68,7 +70,7 @@ a {
     font-size: 9px;
 }
 .btn:hover{
-    
+    opacity: 0.75;
 }
 
 .total_borded {
@@ -209,7 +211,7 @@ GRID
 */
 
 .grid {
-    padding-top: 5.5rem;
+    padding-top: 5rem;
     background-color: var(--clr-white);
 }
 
@@ -306,10 +308,7 @@ MEET
 .btn_meet {
     background-color: var(--clr-white);
     color: var(--clr-black);
-    border-top: 1px solid var(--clr-border-grid);
-    border-right: 1px solid var(--clr-border-grid);
-    border-bottom: 1px solid var(--clr-black);
-    border-left: 1px solid var(--clr-black);
+    border: 1px solid var(--clr-black);
     margin: 1.2rem 0;
 }
 
@@ -363,6 +362,7 @@ DROPBOX_COLABORATION
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 16/9;
 }
 
 .wrap img {
@@ -382,6 +382,7 @@ DROPBOX_COLABORATION
 
 #color_verde {
     background-color: var(--clr-verde);
+    border: 10px solid var(--clr-border-green);
 }
 
 #color_magenta {
@@ -465,7 +466,6 @@ COMMON QUESTIONS
 }
  .common_questions span{
     margin-right: 1.5rem;
-    animation: 0.3s;
     
  }
  .question:hover .question_text{
