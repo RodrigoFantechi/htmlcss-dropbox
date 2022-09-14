@@ -22,46 +22,47 @@
 
 <body>
     <header id="site_header">
-        <nav>
-            <div class="nav_header">
-                <div class="items_nav_header_left">
-                    <img src="assets/img/logo-small.png" alt="logo Dropbox">
-                    <ul class="links">
-                        <li class="border_botton_marked">
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li class="border_botton_marked">
-                            <a href="#">Funzioni</a>
-                        </li>
-                        <li class="border_botton_marked">
-                            <a href="#">Piani e Prezzi</a>
-                        </li>
-                    </ul>
+        <nav class="nav_header">
 
-                </div>
-                <div class="items_nav_header_right">
-                    <ul class="links">
-                        <li class="border_botton_marked">
-                            <a href="#">Supporto</a>
-                        </li>
-                        <li class="border_botton_marked">
-                            <a href="#">Contatta l'ufficio vendite</a>
-                        </li>
-                        <li class="border_botton_marked">
-                            <a href="#">Accedi</a>
-                        </li>
+            <div class="items_nav_header_left">
+                <img src="assets/img/logo-small.png" alt="logo Dropbox">
+                <ul class="links">
+                    <li class="border_botton_marked">
+                        <a href="#">Perché Dropbox</a>
+                    </li>
+                    <li class="border_botton_marked">
+                        <a href="#">Funzioni</a>
+                    </li>
+                    <li class="border_botton_marked">
+                        <a href="#">Piani e Prezzi</a>
+                    </li>
+                </ul>
 
-                    </ul>
-                    <button class="btn">Inizia</button>
-                </div>
             </div>
+            <div class="items_nav_header_right">
+                <ul class="links">
+                    <li class="border_botton_marked">
+                        <a href="#">Supporto</a>
+                    </li>
+                    <li class="border_botton_marked">
+                        <a href="#">Contatta l'ufficio vendite</a>
+                    </li>
+                    <li class="border_botton_marked">
+                        <a href="#">Accedi</a>
+                    </li>
+
+                </ul>
+                <button class="btn">Inizia</button>
+            </div>
+
 
         </nav>
     </header>
     <!-- /#site_header -->
     <main id="site_main">
-        <section class="banner">
-            <div class="container_banner">
+
+        <section class="jumbotron">
+            <div class="container_lg">
                 <div class="title">
                     <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 </div>
@@ -74,21 +75,26 @@
                             e integrato per ottimizzare il flusso di lavoro esistente.</p>
                         <button class="btn">Inizia la tua prova gratuita</button>
                         <p>Annulla in qualsiasi momento</p>
-                        <a href="#grid"><i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="grid" id="grid">
+        <!-- /.junbotron -->
+        <section class="plans" id="plans">
             <div class="main_container">
+
                 <h2>Trova il piano business che fa per te</h2>
+
                 <form action="#">
                     <input type="radio" id="fatturazione_mensile" name="fatturazione">
                     <label for="fatturazione_mensile">Fatturazione Mensile</label>
                     <input type="radio" id="fatturazione_annuale" name="fatturazione">
                     <label for="fatturazione_annuale">Fatturazione Annuale</label>
                 </form>
+
                 <div class="main_row">
+
                     <div class="col-4">
                         <div class="users"><span><i class="fa-solid fa-user"></i> Singolo</span></div>
                         <div class="contenuto_colonna">
@@ -242,8 +248,12 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="users total_borded"><span><i class="fa-solid fa-building"></i> Azienda</span></div>
+
+                <div class="users total_borded"><span><i class="fa-solid fa-building"></i> Azienda</span>
+                </div>
+
                 <div class="main_row total_borded">
                     <div class="col-8">
                         <div class="contenuto_colonna">
@@ -259,8 +269,10 @@
                     </div>
                 </div>
             </div>
+
         </section>
-        <section class="meet">
+        <!-- /.plans -->
+        <section class="partners">
             <div class="main_container">
                 <div class="main_row">
                     <div class="col-7">
@@ -271,11 +283,12 @@
                         <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necesari
                             per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione integrazione, gestione
                             e supporto continui</p>
-                        <button class="btn btn_meet">Trova un partner</button>
+                        <button class="btn btn_partners">Trova un partner</button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- /.partners -->
         <section class="operation_dropbox_business">
             <div class="main_container">
                 <h2>Esegui più operazioni con Dropbox Business</h2>
@@ -325,19 +338,20 @@
                 </div>
             </div>
         </section>
+        <!-- /.operation_dropbox_business -->
         <section class="dropbox_colaboration">
             <div class="main_container">
                 <h2> Più di 500.000 team utilizzano <br> Dropbox Business</h2>
                 <a href="#" class="underlined">Scopri di più sui nostri clienti</a>
             </div>
             <div class="container_flex">
-                <div class="wrap">
-                    <div id="color_verde"><img src="assets/img/designit.svg" alt=""></div>
-                    <div id="color_magenta"><img src="assets/img/arizona_state_university.svg" alt=""></div>
-                    <div id="color_azzurro"><img src="assets/img/university_of_florida.svg" alt=""></div>
-                    <div id="color_arancione"><img src="assets/img/topps.svg" alt=""></div>
+                <div class="brends">
+                    <div id="designit"><img src="assets/img/designit.svg" alt=""></div>
+                    <div id="arizona_state_university"><img src="assets/img/arizona_state_university.svg" alt=""></div>
+                    <div id="university_of_florida"><img src="assets/img/university_of_florida.svg" alt=""></div>
+                    <div id="topps"><img src="assets/img/topps.svg" alt=""></div>
                 </div>
-                <div class="grow">
+                <div class="citation">
                     <img src="assets/img/designit.svg" alt="">
                     <div class="gray_line"></div>
                     <p>"I membri del nostro team lavorano costantemente in paesi, fusi orari e uffici diversi. Ora molte
@@ -345,14 +359,15 @@
                         Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto
                         Dropbox Paper."<br><br>Morten Thomsen, Global IT lead</p>
                 </div>
-                <div class="wrap">
-                    <div id="color_rosso"><img src="assets/img/world_bicycle_relief.svg" alt=""></div>
-                    <div id="color_grigio"><img src="assets/img/hearst_corp.svg" alt=""></div>
-                    <div id="color_blu"><img src="assets/img/lonely_planet.svg" alt=""></div>
-                    <div id="color_giallo"><img src="assets/img/clear_channel.svg" alt=""></div>
+                <div class="brends">
+                    <div id="world_bicycle_relief"><img src="assets/img/world_bicycle_relief.svg" alt=""></div>
+                    <div id="hearst_corp"><img src="assets/img/hearst_corp.svg" alt=""></div>
+                    <div id="lonely_planet"><img src="assets/img/lonely_planet.svg" alt=""></div>
+                    <div id="clear_channel"><img src="assets/img/clear_channel.svg" alt=""></div>
                 </div>
             </div>
         </section>
+        <!-- /.dropbox_colaboration -->
         <section class="dropbox_free_trial">
             <div>
                 <div class="main_container">
@@ -366,6 +381,7 @@
                 </div>
             </div>
         </section>
+        <!-- /.dropbox_free_trial -->
         <section class="common_questions">
             <div class="main_container">
                 <h2>Domande Frequenti</h2>
@@ -429,63 +445,64 @@
                 </article>
             </div>
         </section>
+        <!-- /.common_questions -->
     </main>
     <!-- /#site_main -->
     <footer id="site_footer">
-        <div class="container_footer">
+        <div class="container_lg">
             <div class="main_row">
-                <div>
+                <div class="col">
                     <h4>Dopbox</h4>
                     <div class="link">
-                        <a href="h">Applicazione Desktop</a>
-                        <a href="h">Perché Dropbox</a>
-                        <a href="h">Piani</a>
-                        <a href="h">Sicurezza</a>
-                        <a href="h">Funzioni</a>
+                        <a href="#">Applicazione Desktop</a>
+                        <a href="#">Perché Dropbox</a>
+                        <a href="#">Piani</a>
+                        <a href="#">Sicurezza</a>
+                        <a href="#">Funzioni</a>
                     </div>
                 </div>
-                <div>
+                <div class="col">
                     <h4>Dopbox</h4>
                     <div class="link">
-                        <a href="h">Applicazione Desktop</a>
-                        <a href="h">Perché Dropbox</a>
-                        <a href="h">Piani</a>
-                        <a href="h">Sicurezza</a>
-                        <a href="h">Funzioni</a>
+                        <a href="#">Applicazione Desktop</a>
+                        <a href="#">Perché Dropbox</a>
+                        <a href="#">Piani</a>
+                        <a href="#">Sicurezza</a>
+                        <a href="#">Funzioni</a>
                     </div>
                 </div>
-                <div>
+                <div class="col">
                     <h4>Dopbox</h4>
                     <div class="link">
-                        <a href="h">Applicazione Desktop</a>
-                        <a href="h">Perché Dropbox</a>
-                        <a href="h">Piani</a>
-                        <a href="h">Sicurezza</a>
-                        <a href="h">Funzioni</a>
+                        <a href="#">Applicazione Desktop</a>
+                        <a href="#">Perché Dropbox</a>
+                        <a href="#">Piani</a>
+                        <a href="#">Sicurezza</a>
+                        <a href="#">Funzioni</a>
                     </div>
                 </div>
-                <div>
+                <div class="col">
                     <h4>Dopbox</h4>
                     <div class="link">
-                        <a href="h">Applicazione Desktop</a>
-                        <a href="h">Perché Dropbox</a>
-                        <a href="h">Piani</a>
-                        <a href="h">Sicurezza</a>
-                        <a href="h">Funzioni</a>
+                        <a href="#">Applicazione Desktop</a>
+                        <a href="#">Perché Dropbox</a>
+                        <a href="#">Piani</a>
+                        <a href="#">Sicurezza</a>
+                        <a href="#">Funzioni</a>
                     </div>
                 </div>
-                <div>
+                <div class="col">
                     <h4>Dopbox</h4>
                     <div class="link">
-                        <a href="h">Applicazione Desktop</a>
-                        <a href="h">Perché Dropbox</a>
-                        <a href="h">Piani</a>
-                        <a href="h">Sicurezza</a>
-                        <a href="h">Funzioni</a>
+                        <a href="#">Applicazione Desktop</a>
+                        <a href="#">Perché Dropbox</a>
+                        <a href="#">Piani</a>
+                        <a href="#">Sicurezza</a>
+                        <a href="#">Funzioni</a>
                     </div>
                 </div>
             </div>
-<div class="gray_line"></div>
+            <div class="gray_line"></div>
             <div class="lenguage">
                 <span><i class="fa-solid fa-earth-americas"></i> </span>
                 <span>Italiano</span>
