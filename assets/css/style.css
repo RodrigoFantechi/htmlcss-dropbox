@@ -75,6 +75,7 @@ a {
     border: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 9px;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -85,8 +86,13 @@ a {
     border: 1px solid var(--clr-border-grid);
 }
 
+h1 {
+    font-size: 45px;
+    padding-bottom: 2.5rem;
+}
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 h3 {
@@ -105,6 +111,9 @@ h3 {
     margin: 1.5rem 0;
 }
 
+.contenuto_colonna {
+    padding: 0.9rem;
+}
 
 /* #endregion Utilities */
 
@@ -188,23 +197,16 @@ JUMBOTRON
     width: 30%;
 }
 
-.jumbotron h1 {
-    font-size: 45px;
-    padding-bottom: 2.5rem;
-}
-
-.jumbotron a {
+.jumbotron .scroll_down {
     color: var(--clr-black);
+    font-size: 1.75rem;
+    margin-top: 2.75rem;
 }
 
 .text .btn{
     margin: 1.2rem 0;
 }
 
-.text i {
-    font-size: 1.75rem;
-    margin-top: 2.75rem;
-}
 
 /*
 =============== 
@@ -218,7 +220,6 @@ PLANS
 }
 
 .plans form {
-    margin-top: 2.5rem;
     margin-bottom: 1.75rem;
 }
 
@@ -239,11 +240,6 @@ form label {
     padding: 0.5rem;
     border-bottom: 1px solid var(--clr-border-grid);
 }
-
-.contenuto_colonna {
-    padding: 0.9rem;
-}
-
 
 .list,
 .punti_salienti {
@@ -272,6 +268,7 @@ form label {
 
 .plans .btn {
     width: 100%;
+    text-align: center;
 }
 
 .punti_salienti i {
@@ -319,7 +316,6 @@ OPERATION_DROPBOX_BUSINESS
 .operation_dropbox_business .main_row {
     flex-wrap: wrap;
     gap: 0;
-    margin-top: 2rem;
 }
 
 .operation_dropbox_business .col-4 {
@@ -335,12 +331,6 @@ DROPBOX_COLABORATION
     padding-top: 5.5rem;
 }
 
-.dropbox_colaboration a {
-    display: block;
-    margin-top: 2.5rem;
-}
-
-
 .container_flex {
     display: flex;
     margin-top: 3.5rem;
@@ -349,11 +339,11 @@ DROPBOX_COLABORATION
 .brends {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .brends>div {
     width: 50%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,16 +351,16 @@ DROPBOX_COLABORATION
 }
 
 .brends img {
-    width: 40%;
     filter: invert();
 }
 
 .citation {
     padding: 2.5rem;
     background-color: var(--clr-lighter_gray);
+    flex-grow: 1;
 }
 
-.citation img {
+.dropbox_colaboration img {
     width: 40%;
 }
 
@@ -435,33 +425,29 @@ DROPBOX_FREE_TRIAL
     padding: 0.5rem;
     text-align: center;
 }
+.dropbox_free_trial h2{
+    margin-bottom: 0;
+}
 
 /*
 =============== 
 COMMON QUESTIONS
 ===============
 */
-.common_questions h2 {
-    margin-bottom: 2rem;
-}
 
 .common_questions {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
 
 }
-
 .common_questions .main_container {
     border-bottom: 1px solid var(--clr-black);
-
 }
-
 .question {
     border-top: 1px solid var(--clr-black);
     padding: 1.5rem 0;
     vertical-align: middle;
 }
-
 .question_title {
     display: flex;
     justify-content: space-between;
@@ -489,8 +475,6 @@ COMMON QUESTIONS
 }
 
 /* #endregion Main */
-
-
 
 /* #region Footer */
 
