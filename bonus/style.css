@@ -13,6 +13,7 @@
     --clr-color-title-trial: #61082B;
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s linear;
 
     /* color brends */
     --clr-university_of_florida: #0093CE;
@@ -160,10 +161,6 @@ header img {
     
 }
 
-.links{
-    display: none;
-}
-
 .nav-toggle {
     font-size: 1.5rem;
     color: var(--clr-primary-5);
@@ -181,6 +178,14 @@ header img {
   .items_nav_header_right{
     display: flex;
     justify-content: space-between;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .show-links {
+    height: 20rem;
   }
   
 /* #endregion Header-Navbar */
@@ -637,7 +642,6 @@ footer .gray_line {
     }
     header li{
         padding: 0.6rem;
-        flex-shrink: 0;
     }
     .nav_header{
         padding: 0;
