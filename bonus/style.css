@@ -384,11 +384,11 @@ DROPBOX_COLABORATION
 
 .brends>div {
     width: 50%;
-    height: 170px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
 }
 
 .brends img {
@@ -397,7 +397,7 @@ DROPBOX_COLABORATION
 }
 
 .citation {
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: var(--clr-lighter_gray);
 }
 
