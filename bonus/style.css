@@ -1,3 +1,5 @@
+/* progetto ottimizzato per essere riprodotto da u viewport largo 1095px/ si ottimizza anche con browser zoom 175% su schermo 24 pollici/ si ottimizza anche con browser zoom 125% su schermo 16 pollici */
+
 /* #region Common Rules */
 
 :root {
@@ -6,19 +8,22 @@
     --clr-primary: #0061FF;
     --clr-banner: #B4D0E7;
     --clr-border-grid: #EDEDEE;
-    --clr-azzurro: #0093CE;
-    --clr-blu: #0D2481;
-    --clr-magenta: #61082B;
-    --clr-verde: #A2D39B;
-    --clr-grigio: #B4D0E7;
-    --clr-rosso: #D5001F;
-    --clr-arancione: #FF1C1C;
-    --clr-giallo: #FFD830;
     --clr-lighter_gray: #F5F5F5;
+    --clr-grigio: #B4D0E7;
     --clr-color-title-trial: #61082B;
-
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* color brends */
+    --clr-university_of_florida: #0093CE;
+    --clr-lonely_planet: #0D2481;
+    --clr-arizona_state_university: #61082B;
+    --clr-designit: #A2D39B;
+    --clr-hearst_corp: #B4D0E7;
+    --clr-world_bicycle_relief: #D5001F;
+    --clr-topps: #FF1C1C;
+    --clr-clear_channel: #FFD830;
+    --clr-border-designit: #D1E9CD;
 }
 
 * {
@@ -32,21 +37,25 @@
     margin: 0 auto;
 }
 
+.container_lg {
+    width: 65%;
+    margin: auto;
+}
+
 .main_row {
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5rem;
 }
 
-img {
+img{
     max-width: 100%;
-}
+  }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 9px;
 }
-
 
 /* #endregion Common Rules */
 
@@ -68,6 +77,10 @@ a {
     font-size: 9px;
 }
 
+.btn:hover {
+    opacity: 0.75;
+}
+
 .total_borded {
     border: 1px solid var(--clr-border-grid);
 }
@@ -86,6 +99,11 @@ h3 {
     color: var(--clr-primary);
 }
 
+.gray_line {
+    width: 20%;
+    border: 0.5px solid var(--clr-border-grid);
+    margin: 1.5rem 0;
+}
 
 
 /* #endregion Utilities */
@@ -99,17 +117,54 @@ header {
     z-index: 100;
 }
 
-nav {
-    background: var(--clr-white);
-    box-shadow: var(--light-shadow);
-  }
-  .nav-header {
+.nav_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-  }
-  .nav-toggle {
+    background: var(--clr-white);
+    text-align: center;
+    padding: 0.6rem;
+    
+}
+
+.links,
+.links li {
+    display: inline-block;
+}
+
+.links li,
+header img {
+    vertical-align: middle;
+    
+}
+
+.links a {
+    color: var(--clr-black);
+    vertical-align: middle;
+}
+
+.links li {
+    border: 2px solid transparent;
+}
+
+.links .border_botton_marked:hover {
+    border-bottom: 2px solid black;
+}
+
+nav .btn {
+    margin-right: 0.6rem;
+}
+
+header img {
+    width: 75px;
+    
+}
+
+.links{
+    display: none;
+}
+
+.nav-toggle {
     font-size: 1.5rem;
     color: var(--clr-primary-5);
     background: transparent;
@@ -117,37 +172,17 @@ nav {
     transition: var(--transition);
     cursor: pointer;
   }
+
   .nav-toggle:hover {
     color: var(--clr-primary-1);
     transform: rotate(360deg);
   }
-  .logo {
-    height: 40px;
-  }
-  .links a {
-    color: var(--clr-grey-3);
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    display: block;
-    padding: 0.5rem 1rem;
-    transition: var(--transition);
-  }
-  .links a:hover {
-    background: var(--clr-primary-8);
-    color: var(--clr-primary-5);
-    padding-left: 1.5rem;
+
+  .items_nav_header_right{
+    display: flex;
+    justify-content: space-between;
   }
   
-  .links {
-    height: 0;
-    overflow: hidden;
-    transition: var(--transition);
-  }
-  .show-links {
-    height: 10rem;
-  }
-
 /* #endregion Header-Navbar */
 
 /* #region Main */
@@ -155,41 +190,37 @@ nav {
 
 /*
 =============== 
-BANNER
+JUMBOTRON
 ===============
 */
 
-.banner {
+.jumbotron {
     background-color: var(--clr-banner);
-    padding-top: 7.25rem;
+    padding-top: 6rem;
     padding-bottom: 0.75rem;
 }
 
-.container_banner,
-.container_footer {
-    width: 65%;
-    margin: auto;
-}
-
-article {
+.jumbotron article {
     position: relative;
-
 }
 
-.banner img {
+.jumbotron img {
     position: absolute;
     left: 30%;
     width: 70%;
 }
 
-.banner .text {
+.jumbotron .text {
     width: 30%;
 }
 
-
-.banner h1 {
+.jumbotron h1 {
     font-size: 45px;
     padding-bottom: 2.5rem;
+}
+
+.jumbotron a {
+    color: var(--clr-black);
 }
 
 .text .btn {
@@ -203,16 +234,16 @@ article {
 
 /*
 =============== 
-GRID
+PLANS
 ===============
 */
 
-.grid {
-    padding-top: 5.5rem;
+.plans {
+    padding-top: 5rem;
     background-color: var(--clr-white);
 }
 
-.grid form {
+.plans form {
     margin-top: 2.5rem;
     margin-bottom: 1.75rem;
 }
@@ -225,7 +256,7 @@ form label {
     margin-right: 1.6rem;
 }
 
-.grid .col-4 {
+.plans .col-4 {
     border: 1px solid var(--clr-border-grid);
 }
 
@@ -252,20 +283,20 @@ form label {
     margin: 0.3rem 0;
 }
 
-.grid ul {
+.plans ul {
     list-style: none;
     margin-left: 0;
     padding-left: 1em;
     text-indent: -0.5em;
 }
 
-.grid .button_align {
+.plans .button_align {
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.grid .btn {
+.plans .btn {
     width: 100%;
 }
 
@@ -273,14 +304,7 @@ form label {
     color: var(--clr-primary);
 }
 
-.gray_line {
-    width: 20%;
-    border: 0.5px solid var(--clr-border-grid);
-    margin: 1.5rem 0;
-}
-
-
-.grid .borderless {
+.plans .borderless {
     border: none;
 }
 
@@ -295,20 +319,17 @@ form label {
 
 /*
 =============== 
-MEET
+PARTNERS
 ===============
 */
-.meet {
+.partners {
     padding-top: 5.5rem;
 }
 
-.btn_meet {
+.btn_partners {
     background-color: var(--clr-white);
     color: var(--clr-black);
-    border-top: 1px solid var(--clr-border-grid);
-    border-right: 1px solid var(--clr-border-grid);
-    border-bottom: 1px solid var(--clr-black);
-    border-left: 1px solid var(--clr-black);
+    border: 1px solid var(--clr-black);
     margin: 1.2rem 0;
 }
 
@@ -351,166 +372,187 @@ DROPBOX_COLABORATION
     margin-top: 3.5rem;
 }
 
-.wrap {
+.brends {
     display: flex;
     flex-wrap: wrap;
 }
 
-.wrap>div {
+.brends>div {
     width: 50%;
     height: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 16/9;
 }
 
-.wrap img {
+.brends img {
     width: 40%;
     filter: invert();
 }
 
-.grow {
+.citation {
     padding: 2rem;
     background-color: var(--clr-lighter_gray);
 }
 
-.grow img {
+.citation img {
     width: 40%;
-
 }
 
-#color_verde {
-    background-color: var(--clr-verde);
+/* back-ground color brends */
+#designit {
+    background-color: var(--clr-designit);
+    border: 10px solid var(--clr-border-designit);
 }
 
-#color_magenta {
-    background-color: var(--clr-magenta);
+#arizona_state_university {
+    background-color: var(--clr-arizona_state_university);
 }
 
-#color_azzurro {
-    background-color: var(--clr-azzurro);
+#university_of_florida {
+    background-color: var(--clr-university_of_florida);
 }
 
-#color_arancione {
-    background-color: var(--clr-arancione);
+#topps {
+    background-color: var(--clr-topps);
 }
 
-#color_rosso {
-    background-color: var(--clr-rosso);
+#world_bicycle_relief {
+    background-color: var(--clr-world_bicycle_relief);
 }
 
-#color_grigio {
-    background-color: var(--clr-grigio);
+#hearst_corp {
+    background-color: var(--clr-hearst_corp);
 }
 
-#color_blu {
-    background-color: var(--clr-blu);
+#lonely_planet {
+    background-color: var(--clr-lonely_planet);
 }
 
-#color_giallo {
-    background-color: var(--clr-giallo);
+#clear_channel {
+    background-color: var(--clr-clear_channel);
 }
+
 /*
 =============== 
 DROPBOX_FREE_TRIAL
 ===============
 */
-.dropbox_free_trial .main_row{
+.dropbox_free_trial .main_row {
     justify-content: space-between;
 }
-.dropbox_free_trial{
+
+.dropbox_free_trial {
     padding: 3rem 0;
     background-color: var(--clr-grigio);
 }
 
-.dropbox_free_trial h2{
+.dropbox_free_trial h2 {
     color: var(--clr-color-title-trial);
 }
-.btn_free_trial{
+
+.btn_free_trial {
     background-color: var(--clr-white);
     color: var(--clr-black);
 }
-.dropbox_free_trial .col-4{
-padding: 0.5rem;
-text-align: center;
+
+.dropbox_free_trial .col-4 {
+    padding: 0.5rem;
+    text-align: center;
 }
+
 /*
 =============== 
 COMMON QUESTIONS
 ===============
 */
-.common_questions h2{
+.common_questions h2 {
     margin-bottom: 2rem;
 }
+
 .common_questions {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
-    
-}
-.common_questions .main_container{
-    border-bottom: 1px solid var(--clr-black);
-    
-}
-.question{
-    border-top: 1px solid var(--clr-black);
 
+}
+
+.common_questions .main_container {
+    border-bottom: 1px solid var(--clr-black);
+
+}
+
+.question {
+    border-top: 1px solid var(--clr-black);
     padding: 1.5rem 0;
-    
     vertical-align: middle;
 }
- .question{
+
+.question_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
- }
- .common_questions p{
-    display: none;
- }
- .common_questions span{
+}
+
+.common_questions span {
     margin-right: 1.5rem;
- }
- .question_text:hover p{
+
+}
+
+.question:hover .question_text {
     display: block;
     margin-top: 1rem;
- }
- .question_text:hover span{
-    display: none;
- }
- .question_text{
- padding: 0.2rem;
 }
+
+.question:hover span {
+    rotate: 180deg;
+}
+
+.question_text {
+    padding: 0.2rem;
+    display: none;
+}
+
 /* #endregion Main */
 
 /* #region Footer */
-footer{
+
+footer {
     background-color: var(--clr-black);
     color: var(--clr-white);
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--clr-white);
-    display:block;
+    display: block;
     margin: 0.5rem 0;
 }
-.container_footer{
+
+footer .container_lg {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-footer h4{
+
+footer h4 {
     margin-bottom: 1.5rem;
 }
-footer .main_row{
+
+footer .main_row {
     justify-content: space-between;
     margin-bottom: 4rem;
 }
-.lenguage *{
+
+.lenguage * {
     margin-right: 0.2rem;
     vertical-align: middle;
 }
-footer .gray_line{
+
+footer .gray_line {
     width: 10%;
 }
+
 /* #endregion Footer */
 
 /* #region Grid Flexbox */
@@ -561,21 +603,10 @@ footer .gray_line{
 
 /* #endregion Grid Flexbox */
 
-/* #region responsive */
-
 
 @media screen and (min-width: 800px) {
-    .nav-center {
-      
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-    }
-    .nav-header {
-      padding: 0;
-    }
+   
+
     .nav-toggle {
       display: none;
     }
@@ -591,7 +622,25 @@ footer .gray_line{
       padding: 0;
       background: transparent;
     }
-  
+    header img{
+        padding: 0;
+        width: 75px;
+    }
+    .col-2{
+        width: calc((100% / 12) * 1);
+    }
+    .col-10{
+        width: calc((100% / 12) * 11);
+    }
+    .link_right .links{
+        justify-content: flex-end;
+    }
+    header li{
+        padding: 0.6rem;
+        flex-shrink: 0;
+    }
+    .nav_header{
+        padding: 0;
+    }
+    
   }
-  
-/* #endregion responsive */
